@@ -1,0 +1,722 @@
+/*
+Theme Name: MR Software
+Theme URI: http://mrsoftware.ir/
+Author: MR Softwarem
+Author URI: http://mrsoftware.ir/
+Description: این قالب برای سایت اقای نرم افزار طراحی شده است و تمام حقوق مادی و معنوی محفوظ میباشد
+Version: 1.0
+License: Mr Software
+License URI: http://www.mrsoftware.ir/
+Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: MRSoftware
+*/
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 100;
+    src: url('../fonts/eot/IRANSansWeb_UltraLight.eot');
+    src: url('../fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),
+    url('../fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),
+    url('../fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+[hidden], template {
+    display: none;
+}
+
+a {
+    background: transparent;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+h1 {
+    margin: .67em 0;
+    font-size: 2em;
+}
+
+mark {
+    color: #000;
+    background: #ff0;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -.5em;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+hr {
+    height: 0;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+pre {
+    overflow: auto;
+}
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+button {
+    overflow: visible;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 2px;
+    border: 1px solid #c0c0c0;
+}
+
+legend {
+    padding: 0;
+    border: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0;
+}
+/*====================================================*/
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+body {
+    background: #ebebeb;
+    font-family: IRANSans;
+}
+header{
+    width: 100%;
+    float: right;
+    background: #ffffff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.top-menu{
+    width: 100%;
+    float: right;
+    background: #F7F7F7;
+}
+/*
+.top-menu ul{
+    padding: 10px;
+}
+.top-menu li{
+    display: inline-block;
+    margin:5px;
+}
+.top-menu li:hover a{
+    color: #ED4644;
+}
+
+.top-menu li:not(:last-child):after{
+    content: '-';
+    display: inline-block;
+    color: #b7b4b4;
+    margin-right: 10px;
+}
+.top-menu li a{
+    color: #555555;
+}
+.top-menu .telegram-link{
+    color: #0088cc;
+    margin-top: 14px;
+}
+*/
+
+.top-menu .navbar-default{
+    border: none;
+}
+.top-menu .navbar{
+    margin-bottom: 0;
+}
+.top-menu .telegram-link{
+    color: #0088cc !important;
+}
+header .logo{
+    margin: 29px 0 7px 0;
+    width: 200px;
+}
+header .description{
+    font-size: 14px;
+    text-align: right;
+    float: right;
+    clear: both;
+}
+header .ads{
+    width: 100%;
+    margin-top:29px;
+}
+header .timeDateHeader{
+    margin: 29px 0 5px 0;
+
+}
+header .timeDateHeader span:first-child{
+    font-weight: bold;
+}
+header .timeDateHeader span{
+    font-size: 14px;
+    padding: 5px;
+}
+
+header .search .form-group{
+    position: relative;
+}
+header .search .form-group::after{
+    content: "\f002";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    color: #555555;
+    font-size: 14px;
+    top:10px;
+    left: 10px;
+}
+header .search .form-group input{
+    padding-left: 30px;
+}
+header hr{
+    margin-bottom: 0 !important;
+}
+
+
+ /* Level 1 */
+header .category{
+    width: 100%;
+    /* height: 30px; */
+    float: right;
+    font-size: .8em;
+    margin-bottom: -7px;
+}
+header .category ul{
+    display: none;
+    z-index: 1500;
+}
+header .category a{
+color: #555555;
+}
+header .category li:hover > a{
+    color: #ED4644;
+}
+header .category > li:first-child{
+    font-size: 30px;
+    padding-bottom: 13px;
+}
+header .category > li{
+    display: inline-block;
+    margin: 5px;
+    border-bottom:1px solid #c3c3c2;
+    padding-bottom: 17px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+header .category > li:hover {
+    border-bottom-color: #ED4644;
+}
+header .category > li:hover > a{
+    color: #ED4644;
+}
+
+/* Level 2 */
+
+header .category > li > ul{
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    min-width: 250px;
+    top:35px;
+}
+header .category > li > ul > li{
+    position: relative;
+    margin:10px 0;
+    font-size: 16px;
+}
+
+header .category > li > ul > li:hover > a{
+    color: #ED4644;
+}
+header .category > li > ul > li:hover:after{
+    color: #ED4644;
+}
+header .category > li > ul > li:after{
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 14px;
+    content: "\f0d9";
+    left:5px;
+    display: inline-block;
+    vert-align:middle;
+}
+
+/* Level 3 */
+header .category li:hover > ul{
+    display: block;
+}
+header .category > li > ul > li  ul{
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    min-width: 250px;
+    right: 230px;
+    top: -10px;
+}
+header .category > li > ul > li  ul li{
+    padding: 5px;
+}
+
+
+main{
+    clear: both;
+    /*padding-top: 20px;*/
+}
+main .slider{
+    float: right;
+    margin-top: 20px;
+    width: 100%;
+}
+
+main .box{
+    border-radius:5px;
+    width: 100%;
+    background: #fff;
+    float: right;
+    margin-top: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+main .box > h3{
+    margin: 10px 10px 0 10px;
+    color: #C2282A;
+    font-weight: bold;
+    border-bottom: 1px solid #C2282A;
+    display: inline-block;
+    padding: 10px;
+}
+main .box > hr{
+    margin-top: -1px;
+}
+main .box > .content{
+    padding: 5px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+}
+main .box.vip > .content li{
+    margin: 5px 0;
+    position: relative;
+    padding-right: 15px;
+}
+main .box.vip > .content li:before{
+    content: "\f053";
+    position: absolute;
+    font-family: FontAwesome;
+    right: 1px;
+    top:5px;
+    font-size: 14px;
+}
+
+main .box.vip > .content li a{
+    color: #555555;
+    font-size:14px;
+    line-height: 21px;
+}
+main .box.vip > .content li:hover a{
+    color: #C2282A;
+}
+
+main .posts{
+    margin-top: 20px;
+    float: right;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+main .posts > h3 a{
+    color: #000;
+}
+main .posts > h3:hover a{
+    color: #C2282A;
+}
+main .posts > h3{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px;
+    margin: 10px 10px 0 10px;
+    border-bottom: 2px solid #C2282A;
+    display: inline-block;
+}
+
+main .posts > hr{
+    margin: -2px 0 0 0;
+    border-top:2px solid #fff;
+}
+main .posts > .content{
+    width: 100%;
+    background: #fff;
+    float: right;
+    padding: 10px;
+}
+main .posts > .content .post{
+    /*width: 20%;*/
+    width: 100%;
+    float: right;
+    padding: 2px;
+    position: relative;
+    overflow-x:hidden ;
+}
+
+main .posts > .content .post h2{
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    float: right;
+    color: #555555;
+}
+main .posts > .content .post h2 a{
+    color: #555555;
+}
+main .posts > .content .post h2:hover a{
+    color: #000;
+}
+main .posts > .content .post:hover .details{
+    /*display:block ;*/
+    right: 0;
+}
+main .posts > .content .post .details{
+    transition: all 0.3s ease;
+    /*display: none;*/
+    width: 100%;
+    height:100%;
+    position: absolute;
+    right: -100%;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+main .posts > .content .post .details ul li{
+    float: right;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
+
+}
+main .posts > .content .post .details ul li:last-child{
+    line-height: 20px;
+}
+main .posts > .content .post .details ul li > span{
+    font-weight: bold;
+}
+main .sidebar{
+    width: 100%;
+    float: right;
+    margin-top: 20px;
+}
+main .sidebar > div{
+    margin:0 !important;
+    padding: 0 !important;
+}
+main .sidebar .box{
+    margin-bottom: 20px;
+}
+main .box.news .content li{
+    font-size: 14px;
+    float: right;
+    width: 100%;
+    margin: 5px 0;
+    padding-right: 15px;
+    position: relative;
+}
+main .box.news .content li a{
+    color: #555555;
+}
+main .box.news .content li:hover a{
+    color: #C2282A;
+}
+main .box.news .content li:before{
+    content: "\f1ce";
+    position: absolute;
+    font-family: FontAwesome;
+    right: 0;
+    font-size: 11px;
+    color: #C2282A;
+    top:3px;
+}
+main .box.news .content{
+    margin-bottom: 10px;
+}
+main .box.news-bottom{
+    margin-top: 20px;
+}
+
+.box-link {
+    width: 90%;
+    margin: 5%;
+    float: right;
+    border-radius:5px;
+    border:1px solid #ebebeb;
+    padding: 10px;
+}
+.box-link  i{
+    margin: 0 5px ;
+}
+footer{
+    margin-top: 20px;
+    background: url("../images/footerbg.jpg");
+    background-size: 100% 100%;
+    padding: 2px;
+    max-width: 100%;
+    overflow: hidden;
+}
+footer .box{
+    width: 100%;
+    float: right;
+
+}
+footer .box > h3{
+    margin: 10px 10px 0 10px;
+    color: #C2282A;
+    font-weight: bold;
+    border-bottom: 1px solid #C2282A;
+    display: inline-block;
+    padding: 10px;
+}
+footer .box > hr{
+    margin-top: -1px;
+    border-color: #000000;
+}
+footer .box > .content{
+    padding: 5px;
+    margin-bottom: 20px;
+    float: right;
+    width: 100%;
+}
+footer .box.friends > .content li{
+    margin: 5px 0;
+    position: relative;
+    padding-right: 15px;
+}
+footer .box.friends > .content li:before{
+    content: "\f124";
+    position: absolute;
+    font-family: FontAwesome;
+    right: 1px;
+    top:5px;
+    font-size: 14px;
+}
+
+footer .box.friends > .content li a{
+    color: #555555;
+    font-size:14px;
+    line-height: 21px;
+}
+footer .box.friends > .content li:hover a{
+    color: #C2282A;
+}
+footer .about{
+    margin-top: 45px;
+}
+footer .about .logo{
+    margin-bottom: 10px;
+}
+footer .about p{
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+@media (min-width: 768px){
+    main .sidebar > div.col-sm-6 {
+        padding-left: 15px !important ;
+        padding-right: 15px !important ;
+    }
+}
+@media (min-width: 992px){
+    main .sidebar > div.col-md-12{
+        padding: 0 !important;
+    }
+}
+
+
